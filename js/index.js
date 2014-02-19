@@ -80,6 +80,7 @@ var app = {
         // disconnect() will get called only if isConnected() (below)
         // returns success  In other words, if  connected, then disconnect:
         var disconnect = function () {
+			alert("Disconnect Button Pressed!");
             app.display("attempting to disconnect");
             // if connected, do this:
             bluetoothSerial.disconnect(
