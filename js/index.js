@@ -131,7 +131,7 @@ var app = {
     appends @error to the message div:
 */
     showError: function(error) {
-        app.display(error);
+        app.display("Error: "+error);
     },
 
 /*
