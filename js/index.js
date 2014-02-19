@@ -114,10 +114,10 @@ var app = {
 */
     closePort: function() {
         // if you get a good Bluetooth serial connection:
-		app.display("Trying to disconnect");
+		connectButton.innerHTML = "Connect";
         app.display("Disconnected from: " + app.macAddress);
         // change the button's name:
-        connectButton.innerHTML = "Connect";
+        
         // unsubscribe from listening:
         bluetoothSerial.unsubscribe(
                 function (data) {
